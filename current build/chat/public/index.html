@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Convertsation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <h1 class="logo">Convertsation</h1>
+
+  <ul class="pages">
+
+
+
+
+
+    <li class="chat page">
+
+      <div class="Library">
+
+  <div class="Library-open">
+    <div>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="Library-collapse">
+    <div class="Library-top">
+      <h1>Library</h1>
+
+      <div class="Library-icons">
+        <i class="material-icons Library-search">search</i>
+        <i class="material-icons Library-bookmark">bookmark_border</i>
+      </div>
+
+      <div class="Library-close Library-close-search">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="Library-close Library-close-bookmark">
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <div class="Library-searchbox">
+      <div class="Library-searchinput">
+        <div id="search">
+          <form id="search_form">
+            <input class="inputSearch" type="text" size="80" id="search_txt" placeholder="Keyword, author, ISBN" />
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="Library-searchprompt">
+      <h1>Search the library</h1>
+      <h2>Find a reasourse to support your arguments</h2>
+    </div>
+
+    <div class="Library-section Library-searchresults">
+
+      <div id="books"></div>
+
+    </div>
+
+    <div class="Library-section Library-bookmarkspage">
+
+    </div>
+
+    <div class="Library-loader">
+      <div class="arrow-container">
+        <div class="loader-arrow"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+      <div class="Table">
+
+        <div class="topic">
+          <h3>Conversation Topic: The Great Gatsby</h3>
+        </div>
+
+
+
+        <div class="chatArea">
+          <ul class="messages"></ul>
+        </div>
+
+
+        <!--DISPLAY USERS-->
+        <div class="users">
+          <ul>
+          </ul>
+        </div>
+
+        <!--USER INPUT-->
+        <div class="input">
+          <textarea class="inputMessage" placeholder="Type message..."></textarea>
+          <div class="send">Send</div>
+        </div>
+
+      </div>
+
+
+    </li>
+
+
+
+
+
+    <li class="login page">
+
+      <div class="background"></div>
+
+      <div class="form">
+        <h3 class="title">Enter a nickname:</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+
+
+
+    </li>
+
+
+  </ul>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+  <script src="/table.js"></script>
+</body>
+</html>
