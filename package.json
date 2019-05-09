@@ -22,6 +22,7 @@
   },
   "scripts": {
     "test": "nyc mocha --reporter spec --slow 200 --bail --timeout 10000 test/socket.io.js"
+    "start": "node current build/chat/index.js"
   },
   "dependencies": {
     "debug": "~4.1.0",
